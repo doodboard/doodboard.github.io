@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+
+<head>
+
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>doodboard</title>
+
+    <link rel="shortcut icon" href="https://i.imgur.com/CnJg2xH.png">
+
+	<style type="text/css">
+    
+		html, body {
+			margin-left: auto;
+            margin-right: auto;
+			width:100%; 
+		}
+
+		body {
+		    font-family: 'Montserrat', sans-serif;
+			margin: 0 0 0 0;
+			color: black;
+			font-weight: bold;
+			font-size: 100%;
+			min-width: 475px;
+		}
+	
+    	a:link {
+			text-decoration: none;
+	    }
+		a:link {
+			color: rgb(0, 0, 0);
+		}
+		a:visited {
+            color: rgb(0, 0, 0);
+        }
+		a:hover{
+		    color: orange;
+		}
+        a:active {
+            color: orange;
+        }
+        a, h1, h2{
+			margin: 0;
+        }
+
+		.sidebar1{
+		    top:0;
+			width: 30vw;
+			height: 7vh;
+			position: relative;
+			padding-top:.5vh;
+			padding-left: 30px;
+			padding-bottom: .5vh;
+			opacity: 1;
+	        z-index: 16;
+		}
+		.sidebar1 h1 {
+			margin-top: .5vh;
+	        font-size: 6vh;
+	        line-height: 100%;
+		}
+		.sidebar2{
+		    top:-8vh;
+			width: 70vw;
+			height: 7vh;
+			left: 28vw;
+			position: relative;
+			padding-top: .5vh;
+			padding-bottom: .5vh;
+			opacity: 1;
+	        z-index: 15;
+		}
+		.sidebar2 h1 {
+			margin-top: .5vh;
+	        font-size: 3vh;
+            text-align: right;
+		}
+		.sidebar2 a {
+			margin-top: .5vh;
+	        font-size: 2.5vh;
+		}
+		.contentpic {
+		    z-index: 2;
+		    display: block;
+			width: auto;
+            margin-left: auto;
+            margin-right: auto;
+			margin-top: 0;
+			margin-bottom: 0;
+            height: auto;
+			position: relative;
+		}
+		.frame {
+		    z-index: 2;
+            height: auto;
+			position: relative;
+            top: 5vh;
+		}
+		.frame img{  
+            display: block;
+            width: 15vh;
+			max-width: 770px;
+			padding-top: 0vh;
+            margin-left: auto;
+            margin-right: auto;
+			margin-top: 0;
+			margin-bottom: 0;
+        }
+        .center {
+            display: block;
+        }
+		.contenttxt {
+		    z-index: 2;
+		    display: block;
+			margin-top: 0vh;
+            width: 60vh;
+			max-width: 770px;
+            height: auto;
+			position: relative;
+            margin-left: auto;
+            margin-right: auto;
+		}
+ 		.para1 { 
+ 		    z-index: 1;
+		    top: 5vh;
+			position: relative;
+			white-space: normal;
+		}       
+		
+        .para1 h1 {
+			line-height: 125%;
+			margin-top: 7.5vh;
+			margin-bottom: 5vh;
+	        font-size: 5.5vh;
+		}
+        .para1 h2 {
+	        font-size: 2.5vh;
+	        line-height: 125%;
+		}
+		.para1 img {
+	        width: 70vw; 
+			padding-top: 10vh;
+			padding-bottom: 5vh;
+			max-width: 770px;
+		}	
+		.frame2 {
+			z-index: 999;
+			position: relative;
+			margin-top: 20vh;
+			margin-bottom: 5vh;
+			width: 100vw;
+		}
+		.frame2 img{  
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: 100%;
+        }
+		.blue { 
+			color: orange;
+		}
+		.cross { 
+			text-decoration: line-through;
+		}
+		.wavy { 
+			text-decoration-line: underline;
+			text-decoration-skip: ink;
+		}
+		
+	@media only screen and (min-width: 1200px) {
+	    
+    }
+  
+	@media (pointer:coarse) {
+
+		body {
+		    max-width: 90%;
+			min-width: 80%;
+			min-height: 20vh;
+			height: 95vh;
+		}
+
+		.sidebar1{ 
+			height: 7vh;
+			padding-top:.5vh;
+			padding-bottom: .5vh;
+			padding-left: 0;
+		}
+		.sidebar1 h1 {
+			margin-top: .5vh;
+	        font-size: 12vw;
+			margin-left: 5px;
+		}
+		.sidebar2{
+		    top: -2vh;
+			width: 95vw;
+			height: auto;
+			left: 2px;
+			padding-bottom: 0;
+		}
+		.sidebar2 a {
+			margin-top: 0vh;	
+	        font-size: 7vw;
+		}
+		.contentpic {
+    		top: 2.5vh;
+			width:100vw;
+			height: 80vw;
+		}
+		.frame {
+			top: 0;
+		}
+		.frame img{  
+            width: 15vh;
+			height: auto;
+  			position:absolute;
+   			top:0;
+  			bottom:0;
+  			left:0;
+   			right:0;
+        }
+		.contenttxt {
+			margin-top: 25vh;
+			margin-bottom: 5vh;
+		    width: 85%;
+			height: auto;
+			left: 3%;
+		}
+		.para1 {
+		    top: 5vh;
+			width: 80vw;
+		}
+		.para1 h1 {
+			line-height: 125%;
+			margin-top:-45vh;
+	        font-size: 3.5vh;
+		}
+		.para1 h2 {
+	        font-size: 2vh;
+			line-height: 150%;
+		}
+		.para1 img {
+	        width: 80vw;
+			padding-bottom: 5vh;
+		}
+		.frame2 {
+			z-index: 999;
+			position: relative;
+			margin-top: 10vh;
+			margin-bottom: 0;
+			width: 100vw;
+			height: 15vh;
+		}
+		.frame2 img{  
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: 100%;
+        }
+	}
+    </style>
+</head>
+
+
+<body>
+ 
+	<div class="sidebar1">    
+		<h1><a href="http://www.doodboard.xyz/">doodboard</a></h1> 
+	 </div>
+	 <div class="sidebar2">    
+		<h1>
+			<a href="http://www.doodboard.xyz/duck">duck&nbsp;&nbsp;</a>
+			<a href="http://www.doodboard.xyz/kiwi">kiwi&nbsp;&nbsp;</a>
+			<a href="http://www.doodboard.xyz/owl">owl&nbsp;&nbsp;</a>
+			<a href="http://www.doodboard.xyz/support">support</a>
+		</h1>
+	 </div>
+    
+    <div class="contentpic">
+		<div class="frame">   
+			<img src="https://i.imgur.com/ODOjG3M.png" class="center">
+		</div>
+	</div>
+
+    <div class="contenttxt">
+    <div class="para1"> 
+        <h1>
+				This is the
+			<span style="white-space:nowrap; color:orange">
+				support</span>  </br>
+				page for released </br>
+				doodboard </br>
+				products</br>
+
+		</h1>
+		<h2 style="text-align: left">
+
+			Follow the <a href="https://www.youtube.com/watch?v=H5qTyHlc_Js"><span class="wavy">BUILD GUIDE</span></a> for duckboard produced by Bunny
+			</br></br>
+			Flash the <a href="http://www.doodboard.xyz/support/duckboard_default.hex"><span class="wavy">HEX FILE</span></a> to pro micro following <a href="https://www.youtube.com/watch?v=VR53Wo9Z960"><span class="wavy">THIS</span></a> guide. pro micros in the kit come in DFU mode. Just plug it and hit flash
+			</br></br>
+			Default <a href="https://i.imgur.com/bLKk2QL.jpg"><span class="wavy">KEYMAP</span></a> for duckboard can be downloaded for reference.
+			</br></br>
+			If you want to compile your own firmware, download the <a href="https://github.com/doodboard/source-code"><span class="wavy">SOURCE CODE</span></a>  
+			</br></br>
+			<a href="https://www.thingiverse.com/thing:4602742/files"><span class="wavy">HERE</span></a> are the 3D files for making your own case if you are into that
+			</br></br>
+			If you have any other questions, please reach out. We are just a message apart.
+
+		</h2>
+		
+    </div>   
+	</div> 
+
+	<div class="frame2">   
+		<img src="https://i.imgur.com/Cop6R15.png" class="center">
+  	</div>
+
+  </body>
+</html>
+  
+<!--
+A rock pile ceases to be a rock pile the moment a single man contemplates it,bearing within him the image of a cathedral
+-->

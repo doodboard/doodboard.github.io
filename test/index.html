@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+
+<head>
+
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>doodboard</title>
+
+    <link rel="shortcut icon" href="https://i.imgur.com/9cA0iDV.png">
+
+	<style type="text/css">
+    
+		html, body {
+			margin-left: auto;
+            margin-right: auto;
+			width:100%; 
+		}
+
+		body {
+		    font-family: 'Montserrat', sans-serif;
+			margin: 0 0 0 0;
+			color: black;
+			font-weight: bold;
+			font-size: 100%;
+			min-width: 475px;
+			height: 100vh;
+			overflow:hidden;
+		}
+	
+    	a:link {
+			text-decoration: none;
+	    }
+		a:link {
+			color: rgb(0, 0, 0);
+		}
+		a:visited {
+            color: rgb(0, 0, 0);
+        }
+		a:hover{
+		    color: #0f0ff5;
+		}
+        a:active {
+            color: #0f0ff5;
+        }
+        a, h1, h2{
+			margin: 0;
+        }
+
+		.sidebar1{
+		    top:0;
+			width: 30vw;
+			height: 7vh;
+			position: relative;
+			padding-top:.5vh;
+			padding-left: 30px;
+			padding-bottom: .5vh;
+			opacity: 1;
+	        z-index: 16;
+		}
+		.sidebar1 h1 {
+			margin-top: .5vh;
+	        font-size: 6vh;
+	        line-height: 100%;
+		}
+		.sidebar2{
+		    top:-8vh;
+			width: 70vw;
+			height: 7vh;
+			left: 28vw;
+			position: relative;
+			padding-top: .5vh;
+			padding-bottom: .5vh;
+			opacity: 1;
+	        z-index: 15;
+		}
+		.sidebar2 h1 {
+			margin-top: .5vh;
+	        font-size: 3vh;
+            text-align: right;
+			overflow:visible;
+		}
+		.sidebar2 a {
+			margin-top: .5vh;
+	        font-size: 2.5vh;
+			overflow:visible;
+		}
+		.contentpic {
+		    z-index: 1;
+		    display: block;
+			width: auto;
+            margin-left: auto;
+            margin-right: auto;
+            height: 60vh;
+			position: relative;
+		}
+		.frame {
+		    z-index: 2;
+            height: auto;
+			position: relative;
+            top: -5vh;
+		}
+		.frame img{  
+            display: block;
+            height: 80vh;
+			padding-top: 0vh;
+			width: auto;
+            margin-left: auto;
+            margin-right: auto;
+			z-index: 1;
+        }
+        .center {
+            margin: auto;
+        }
+        
+		.contenttxt {
+		    z-index: 4;
+		    display: block;
+			margin-top: -70vh;
+            width: 90vw;
+            height: auto;
+			position: relative;
+            margin-left: auto;
+            margin-right: auto;
+		}
+ 		.para1 { 
+			width: 100%;
+ 		    z-index: 1;
+		    top: 5vh;
+			position: relative;
+			white-space: normal;
+		}       
+		
+        .para1 h1 {
+			line-height: 150%;
+			margin-top: 7.5vh;
+			margin-bottom: 0vh;
+	        font-size: 8vh;
+			white-space: nowrap;
+		}
+        .para1 h2 {
+	        font-size: 4vh;
+	        line-height: 80%;
+		}	
+		.frame2 {
+			z-index: 999;
+			position: absolute;
+			margin-top: 0vh;
+			bottom: 0vh;
+			width: 100vw;
+		}
+		.frame2 h2{
+	        font-size: 4vh;
+			position: absolute;
+			bottom: 2vh;
+			left: 5vh;
+		}
+		.frame2 h3{
+	        font-size: 4vh;
+			position: absolute;
+			margin: 0;
+			right: 5vh;
+			bottom: 2vh;
+		}
+		.frame2 img{  
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: 7.5vh;
+        }
+		.frame3 img{  
+            position: fixed;
+			width: 100vw; 
+			max-width: 1500px;
+			z-index: 99;
+        }
+		.blue { 
+			color: #0f0ff5;
+		}
+		.rotate-center {
+			-webkit-animation: rotate-bottom 30s linear infinite both;
+	        animation: rotate-bottom 30s linear infinite both;
+			width: 100vw;
+			max-width: 1500px;
+			height: 50vw;
+			max-height: 750px;
+			z-index: 3;
+			position: fixed;
+			top: 2.5vh;
+			left: 2vw;
+			display: block;
+  			border: 3px solid green;
+		}
+		@-webkit-keyframes rotate-bottom {
+  			0% {
+    			-webkit-transform: rotate(0);
+           		transform: rotate(0);
+    			-webkit-transform-origin: bottom;
+            	transform-origin: bottom;
+  				}
+  			100% {
+    			-webkit-transform: rotate(360deg);
+            	transform: rotate(360deg);
+    			-webkit-transform-origin: bottom;
+            	transform-origin: bottom;
+  				}
+		}
+		@keyframes rotate-bottom {
+  			0% {
+    			-webkit-transform: rotate(0);
+            	transform: rotate(0);
+    			-webkit-transform-origin: bottom;
+            	transform-origin: bottom;
+  			}
+  			100% {
+    			-webkit-transform: rotate(360deg);
+            	transform: rotate(360deg);
+    			-webkit-transform-origin: bottom;
+            	transform-origin: bottom;
+  			}
+		}
+		
+	@media only screen and (max-width: 1250px) {
+		.para1 h1 {
+	        font-size: 5vh;
+			line-height: 200%;
+		}
+		.para1 h2 {
+	        font-size: 3vh;
+			line-height: 100%;
+		}
+		.frame2 h2{
+	        font-size: 3vh;
+			position: absolute;
+			bottom: 10vh;
+			left: 5vh;
+		}
+		.frame2 h3{
+	        font-size: 3vh;
+			position: absolute;
+			margin: 0;
+			right: 5vh;
+			bottom: 10vh;
+		}
+    }
+  
+	@media (pointer:coarse) {
+
+		body {
+		    max-width: 90%;
+			min-width: 80%;
+			min-height: 50vh;
+		}
+		.sidebar1{ 
+			height: 7vh;
+			padding-top:.5vh;
+			padding-bottom: .5vh;
+			padding-left: 0;
+		}
+		.sidebar1 h1 {
+			margin-top: .5vh;
+	        font-size: 12vw;
+			margin-left: 5px;
+		}
+		.sidebar2{
+		    top: -2vh;
+			width: 95vw;
+			left: 2px;
+		}
+		.sidebar2 a {
+			margin-top: 0vh;	
+	        font-size: 7vw;
+		}
+		.contentpic {
+    		top: 7.5vh;
+			width:100vw;
+		}
+		.frame img{  
+			width: 80vw;
+			height: auto;
+  			position:absolute;
+   			top: 50vh;
+  			bottom:0;
+  			left:0;
+   			right:0;
+   			margin:auto;
+        }
+		.contenttxt {
+			margin-top: 25vh;
+		    width:85%;
+			left: 3%;
+			padding-bottom: 7.5vh;
+		}
+		.para1 {
+			top: -85vh;
+			width: 80vw;
+		}
+		.para1 h1 {
+			line-height: 125%;
+			margin-top: 5vh;
+			margin-bottom: 0vh;
+	        font-size: 3.5vh;
+			line-height: 250%;
+		}
+		.para1 h2 {
+	        font-size: 2.5vh;
+			line-height: 175%;
+		}
+		.frame2 h2{
+	        font-size: 2vh;
+			position: absolute;
+			bottom: 3vh;
+			left: 5vh;
+		}
+		.frame2 h3{
+	        font-size: 2vh;
+			position: absolute;
+			margin: 0;
+			right: 5vh;
+			bottom: 3vh;
+		}
+	}
+    </style>
+</head>
+
+<body>
+ 
+	 <div class="sidebar1">    
+		<h1><a>doodboard</a></h1> 
+	 </div>
+	 <div class="sidebar2">    
+		<h1>
+			<a href="http://www.doodboard.xyz/duck">duck&nbsp;&nbsp;</a>
+			<a href="http://www.doodboard.xyz/kiwi">kiwi&nbsp;&nbsp;</a>
+			<a href="http://www.doodboard.xyz/owl">owl&nbsp;&nbsp;</a>
+			<a href="http://www.doodboard.xyz/support">support</a>
+		</h1>
+	 </div>
+	
+    <div class="contentpic">
+		<div class="frame">   
+			<img src="https://i.imgur.com/9N32QfS.png" class="center">
+		  </div>
+	</div>
+
+	
+
+    <div class="contenttxt">
+    	<div class="para1">   
+			<h2>
+				email</br><a href = "mailto: doodboard@gmail.com">doodboard@gmail.com</a>
+			</h2>
+			<h2 style="text-align: right;">
+				discord</br><a href = "https://discord.gg/VKAN9N7">discord.gg/VKAN9N7</a>
+			</h2>
+			<h2>
+				instagram</br><a href = "https://www.instagram.com/doodboard/">@doodboard</a>
+			</h2>
+      	  <h1 style="text-align: center;">
+				<a>0.2%</a> International</br> keyboard enthusiast</br> (<a>99.8%</a> other)</br></br>
+			</h1>
+  	  </div>   
+	</div> 
+
+	<div class="rotate-center">
+		<div class="frame3">   
+			<img src="https://i.imgur.com/aIw9bVW.png" class="center">
+		</div>
+	</div>
+
+	<div class="frame2">   
+		<h2>
+			Seoul, 2020
+		</h2>
+		<h3>
+			Get over it.
+		</h3>
+		<img src="https://i.imgur.com/Cop6R15.png" class="center">
+  	</div>
+    
+    
+    
+
+
+
+  </body>
+</html>
+        
+<!--
+A rock pile ceases to be a rock pile the moment a single man contemplates it,bearing within him the image of a cathedral
+-->
